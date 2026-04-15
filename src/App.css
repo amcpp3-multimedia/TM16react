@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root {
+  --sky-color: transparent; /* Valor inicial */
+}
+
+.sky-background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(40%); /* P&B carregado para a cor sobressair */
+  z-index: -2;
+}
+
+.color-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1; /* Fica entre a imagem e o texto */
+  
+  
+  background-color: var(--sky-color);
+  opacity: 0.5; /* Se estiver em 0 ou 1 pode esconder a imagem ou não aparecer */
+  
+  transition: background-color 0.8s ease-in-out;
+  pointer-events: none; /* Garante que a div não bloqueia os cliques nos botões */
+}
+
+/* Certifique-se de que o app-container não tem um background próprio que tape isto */
+.app-container {
+  background: transparent !important;
+}
