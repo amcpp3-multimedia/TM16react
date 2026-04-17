@@ -136,12 +136,12 @@ const App = () => {
                 <header>
                     <figure className="diff aspect-16/9" style={{ borderRadius: '20px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.3)' }}>
                         <div className="diff-item-1">
-                            <img alt="Chakras Color" src="src/chakra2.webp" />
+                            <img alt="Chakras Color" src="https://res-console.cloudinary.com/dcjyjusu6/thumbnails/transform/v1/image/upload/Y19maWxsLGhfMjAwLHdfMjAw/v1/Y2hha3JhMl9tZGdkcmQ=/template_primary" />
                         </div>
                         <div className="diff-item-2">
                             <img 
                                 alt="Chakras P&B" 
-                                src="src/chakra2.webp" 
+                                src="https://res-console.cloudinary.com/dcjyjusu6/thumbnails/transform/v1/image/upload/Y19maWxsLGhfMjAwLHdfMjAw/v1/Y2hha3JhMl9tZGdkcmQ=/template_primary" 
                                 style={{ filter: 'grayscale(100%)' }} 
                             />
                         </div>
